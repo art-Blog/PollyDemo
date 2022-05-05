@@ -1,0 +1,10 @@
+[
+  {
+    "ClassName": "PollyDemo.B2C.DataService.DAC.WrapClient",
+    "PolicyName": "default"
+  },
+  {
+    "ClassName": "PollyDemo.B2C.DataService.DAC.RetryClient",
+    "PolicyName": "retryOnly"
+  }
+]

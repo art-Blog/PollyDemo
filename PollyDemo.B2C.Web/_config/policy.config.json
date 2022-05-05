@@ -1,0 +1,26 @@
+﻿[
+  {
+    "PolicyName": "default",
+    "PolicyWrap": [ "circuitBreaker" , "timeout" ],
+    "TimeoutConfig": {
+      "TimeoutSeconds": 2
+    },
+    "CircuitBreakerConfig": {
+      "ExceptionsAllowedBeforeBreaking": 2,
+      "DurationOfBreak": 10
+    },
+    "AdvancedCircuitBreakerConfig": {
+      "DurationOfBreak": 10,
+      "MinimumThroughput": 8,
+      "SamplingDuration": 4,
+      "FailureThreshold": 0.5
+    }
+  },
+  {
+    "PolicyName": "retryOnly",
+    "PolicyWrap": [ "retry" ],
+    "RetryConfig": {
+      "RetryLimit": 1
+    }
+  }
+]

@@ -1,0 +1,25 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h3>Controller (Web Project)</h3>
+<div class="row">
+    <button class="btn btn-default" id="btn-get-local-retry">Retry</button>
+    <button class="btn btn-default" id="btn-get-local-down-grade">DownGrade</button>
+</div>
+<div class="row">
+    <ul id="get-logs"></ul>
+</div>
+
+<h3>HttpClient</h3>
+<div class="row">
+    <button class="btn btn-default" id="btn-post-local-fusing">Fusing</button>
+</div>
+<div class="row">
+    <ul id="logs"></ul>
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/Page/HomeIndex.js"></script>
+}

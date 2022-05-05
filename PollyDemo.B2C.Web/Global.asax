@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="PollyDemo.B2C.Web.MvcApplication" Language="C#" %>
