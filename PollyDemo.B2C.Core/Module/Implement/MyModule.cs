@@ -25,5 +25,10 @@ namespace PollyDemo.B2C.Core.Module.Implement
         {
             return MyDAO.DownGradeHello();
         }
+
+        public string CallWebService()
+        {
+            return MyDAO.CallWebService();
+        }
     }
 }

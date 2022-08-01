@@ -5,5 +5,6 @@
         string RetryHello();
         string Fusing(string name);
         string DownGradeHello();
+        string CallWebService();
     }
 }

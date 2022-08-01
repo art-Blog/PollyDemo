@@ -1,4 +1,5 @@
-﻿using PollyDemo.B2C.DataService.DAC;
+﻿using System.Net.Http;
+using PollyDemo.B2C.DataService.DAC;
 using PollyDemo.B2C.DataService.DAI;
 
 namespace PollyDemo.B2C.DataService.DAO
@@ -18,6 +19,14 @@ namespace PollyDemo.B2C.DataService.DAO
         public string DownGradeHello()
         {
             return new DownGradeClient().Hello();
+        }
+
+        public string CallWebService()
+        {
+            return new HttpClient().PostAsync(
+                "https://localhost:44371/api/rateLimit",
+                new StringContent("{\"name\":\"test\"}")
+            ).Result.Content.ReadAsStringAsync().Result;
         }
     }
 }

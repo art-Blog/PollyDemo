@@ -62,5 +62,11 @@ namespace PollyDemo.B2C.Web.Controllers
 
             return Content(result);
         }
+
+        [HttpPost]
+        public ActionResult RateLimit()
+        {
+            return Content(MyModule.CallWebService());
+        }
     }
 }
